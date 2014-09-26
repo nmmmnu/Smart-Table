@@ -8,7 +8,7 @@
             var safeGetter;
             var orderBy = $filter('orderBy');
             var filter = $filter('filter');
-            var safeCopy = copyRefs(displayGetter($scope));
+            var safeCopy = /* copyRefs */ (displayGetter($scope));
             var tableState = {
                 sort: {},
                 search: {},
